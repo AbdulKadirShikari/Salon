@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_color"
+    android:orientation="vertical"
+    android:padding="@dimen/_12sdp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Distance"
+        android:textColor="@color/light_blue" />
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rgDistanceId"
+        android:orientation="vertical">
+
+    <RadioButton
+        android:id="@+id/rbThreeKmId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:text="3 KM"/>
+   <RadioButton
+        android:id="@+id/rbFiveKmId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="5 KM"/>
+    <RadioButton
+        android:id="@+id/rbTenKmId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="10 KM"/>
+    </RadioGroup>
+
+</LinearLayout>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/linear_Id"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/colorPrimary">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView_BackIcon_Id"
+                android:layout_width="14dp"
+                android:layout_height="12dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:id="@+id/textView_BEUTY_Id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:layout_toRightOf="@+id/imageView_BackIcon_Id"
+                android:text="Time Slot"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_12sdp" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/reletive_Layout_Id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linear_Id">
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/reletive_ScheduleDatetime_Id"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+
+            android:background="#DCDCDC">
+
+            <TextView
+                android:id="@+id/textView_ScheduleDateTime_Id"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="12dp"
+                android:text="Schedule Date &amp; Time"
+                android:textColor="@android:color/black"
+                android:textSize="18dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/reletive_DayMonthDate_Id"
+            android:layout_width="match_parent"
+            android:layout_height="95dp"
+            android:layout_below="@+id/reletive_ScheduleDatetime_Id">
+
+
+            <LinearLayout
+                android:id="@+id/calendarLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+               >
+
+                <devs.mulham.horizontalcalendar.HorizontalCalendarView
+                    android:id="@+id/calendarView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    app:textColorSelected="#FFFF"
+                  />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/reletive_NormalSlots_Id"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/reletive_DayMonthDate_Id"
+            android:background="#C0C0C0">
+
+            <TextView
+                android:id="@+id/textView_NormalSlot_Id"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="12dp"
+                android:text="Normal Slots"
+                android:textColor="@android:color/black"
+                android:textSize="14dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativebtn_Id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/reletive_NormalSlots_Id">
+            <GridView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="2"
+                android:gravity="center"
+                android:layout_below="@+id/llViewPager"
+                android:layout_above="@+id/layoutId"
+                android:id="@+id/gridTimeSlotsId"
+                ></GridView>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+</RelativeLayout>

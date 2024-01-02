@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardViewId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_8sdp">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/parlorNameId"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_19sdp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="@dimen/_22sdp"
+                android:layout_marginTop="@dimen/_27sdp"
+                android:text="PARLOR NAME"
+                android:textColor="#00BFFF"
+                android:textSize="@dimen/_15sdp" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/textDATE_id"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_19sdp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_18sdp"
+                android:layout_toRightOf="@+id/parlorNameId"
+                android:text="DATE"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textDateChange_Id"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_19sdp"
+                android:layout_below="@+id/textDATE_id"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_toRightOf="@+id/parlorNameId"
+                android:text="12 jan 19" />
+
+            <TextView
+                android:id="@+id/textTime_Id"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_19sdp"
+                android:layout_marginLeft="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_18sdp"
+                android:layout_toRightOf="@+id/textDateChange_Id"
+                android:text="TIME"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textDateTimeId"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_19sdp"
+                android:layout_below="@+id/textTime_Id"
+                android:layout_marginLeft="@dimen/_30sdp"
+                android:layout_toRightOf="@+id/textDATE_id"
+                android:text="2.45 PM" />
+
+            <LinearLayout
+                android:id="@+id/linearSaraGoldId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/parlorNameId"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="19dp">
+
+                <ImageView
+                    android:id="@+id/imageDott_Id"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_marginTop="11dp"
+                    android:src="@drawable/dott" />
+
+                <TextView
+                    android:id="@+id/textContentf_Id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2.9dp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_toRightOf="@+id/imageDott_Id"
+                    android:ellipsize="marquee"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:text="Sara-Gold Facial(improved gold radiance with mould mask)" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinerBasicManicureId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearSaraGoldId"
+                android:layout_marginLeft="@dimen/_5sdp">
+
+                <ImageView
+                    android:id="@+id/imagedotsId"
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_10sdp"
+                    android:layout_below="@+id/imageDott_Id"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:src="@drawable/dott" />
+
+                <TextView
+                    android:id="@+id/contentsId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textContentf_Id"
+                    android:layout_toRightOf="@+id/imagedotsId"
+                    android:ellipsize="marquee"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:text="Basic-Manicure" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LineBasicPedicureId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/LinerBasicManicureId"
+                android:layout_marginLeft="@dimen/_5sdp">
+
+                <ImageView
+                    android:id="@+id/dottId"
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_10sdp"
+                    android:layout_below="@+id/imagedotsId"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:src="@drawable/dott" />
+
+                <TextView
+                    android:id="@+id/contenttId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/contentsId"
+                    android:layout_toRightOf="@+id/dottId"
+                    android:ellipsize="marquee"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:text="Basic-Pedicure" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linearlayId"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_below="@+id/LineBasicPedicureId"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/statusId"
+                        android:layout_width="@dimen/_77sdp"
+                        android:layout_height="@dimen/_19sdp"
+                        android:layout_below="@+id/contenttId"
+                        android:layout_marginLeft="@dimen/_16sdp"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:text="STATUS -"
+                        android:textColor="#c7006e"
+                        android:textSize="@dimen/_15sdp" />
+
+                    <TextView
+                        android:id="@+id/donecancleId"
+                        android:layout_width="@dimen/_61sdp"
+                        android:layout_height="@dimen/_19sdp"
+                        android:layout_below="@+id/contenttId"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:text="DONE"
+                        android:textColor="#c7006e"
+                        android:textSize="@dimen/_15sdp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/laylinearId"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/image">
+
+
+                    <ImageView
+                        android:id="@+id/priceImageId"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_below="@+id/contenttId"
+                        android:layout_marginLeft="@dimen/_50sdp"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:layout_toRightOf="@+id/statusId"
+
+                        android:textSize="@dimen/_19sdp" />
+
+                    <TextView
+                        android:id="@+id/price_Id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_9sdp"
+                        android:text="1999/-"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/_19sdp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

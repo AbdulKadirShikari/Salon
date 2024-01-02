@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DashboardActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+
+
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="5.3">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_weight=".8"
+                    android:padding="@dimen/_6sdp"
+                    android:src="@drawable/map_01" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:background="@null"
+
+                    android:text="301,Vishnupuri Indore"
+                    android:singleLine="true"
+                    android:textColor="@color/white_color" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_weight=".7"
+                    android:padding="@dimen/_6sdp"
+                  />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_weight=".8"
+                    android:padding="@dimen/_6sdp"
+                    android:src="@drawable/cart" />
+            </LinearLayout>
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_dashboard" />
+
+    <Button
+        android:id="@+id/fab"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_gravity="top|end"
+        android:layout_marginTop="@dimen/_60sdp"
+        android:layout_marginRight="@dimen/_8sdp"
+        android:background="@drawable/ic_home_distance" />
+
+    <Button
+        android:id="@+id/btForLocationId"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_gravity="top|end"
+        android:layout_marginTop="@dimen/_100sdp"
+        android:layout_marginRight="@dimen/_8sdp"
+        android:visibility="invisible" />
+
+</android.support.design.widget.CoordinatorLayout>

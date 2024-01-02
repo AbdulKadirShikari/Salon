@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/_6sdp"
+    android:layout_margin="@dimen/_4sdp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_margin="@dimen/_8sdp"
+        android:scaleType="fitXY"
+        android:src="@drawable/bottom_popup_img"
+      />
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:weightSum="3.5"
+      android:orientation="horizontal">
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:layout_weight="3">
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/tvPorlarNameId"
+              android:textSize="@dimen/_14sdp"
+              android:layout_margin="@dimen/_4sdp"
+              android:text="Parlor Name"/>
+
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/tvLocationId"
+              android:layout_margin="@dimen/_4sdp"
+              android:textSize="@dimen/_10sdp"
+              android:text="Parlor Name"/>
+          <com.iarcuschin.simpleratingbar.SimpleRatingBar
+              android:id="@+id/ansRating"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+
+              android:layout_alignParentEnd="true"
+              android:layout_alignParentRight="true"
+
+              app:srb_numberOfStars="5"
+              app:srb_rating="3"
+              app:srb_starSize="15dp"
+              app:srb_stepSize="0.5"
+
+
+              />
+      </LinearLayout>
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:orientation="vertical"
+          android:gravity="center"
+          android:layout_weight=".5">
+
+          <ImageView
+              android:layout_width="@dimen/_35sdp"
+              android:layout_height="@dimen/_35sdp"
+              android:src="@drawable/location_pin"/>
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginBottom="@dimen/_2sdp"
+              android:text="1.5 KM"/>
+      </LinearLayout>
+
+
+  </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnViewId"
+        android:background="@drawable/button_background"
+        android:textColor="@color/white_color"
+        android:textSize="@dimen/_16sdp"
+        android:textAllCaps="false"
+        android:text="View"/>
+    </LinearLayout>
+</android.support.v7.widget.CardView>
